@@ -1,0 +1,53 @@
+curl --location --request GET 'https://platform.opentable.com/sync/v2/reservations?confirmation_id=7009&state=Done&limit=10&offset=0&rid=1027723' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Bearer 5b864d7a-99ba-40c8-9781-aa7f1a5aac89' \
+--header 'Cache-Control: no-cache'
+
+{
+  "id": "3104-62c49ec0c97eba2ce0ff08f2",
+  "href": "https://platform.opentable.com/sync/v2/reservations/3104-62c49ec0c97eba2ce0ff08f2",
+  "rid": 1027723,
+  "sequence_id": 512604,
+  "guest_id": "3104-62c49ec0c97eba2ce0ff08f1",
+  "guest": "https://platform.opentable.com/sync/v2/guests/3104-62c49ec0c97eba2ce0ff08f1",
+  "confirmation_id": 2109966195,
+  "state": "Done",
+  "table_number": [
+    "41"
+  ],
+  "created_date": "2022-07-05T15:27:44",
+  "scheduled_time": "2022-07-07T16:30:00",
+  "party_size": 2,
+  "visit_tags": null,
+  "origin": "Web",
+  "updated_at": "2022-07-07T18:28:23",
+  "seated_time": "2022-07-07T16:19:42",
+  "done_time": "2022-07-07T18:03:04",
+  "pos_data": {
+    "check_ids": [
+      "20220707-30003"
+    ],
+    "pos_sub_total": 20500,
+    "pos_tax": 1593,
+    "pos_tip": 4007,
+    "pos_total_spend": 20893
+  },
+  "scheduled_time_utc": "2022-07-07T21:30:00Z",
+  "marketing_opted_out": false,
+  "guest_request": "",
+  "venue_notes": null,
+  "opentable_notes": "",
+  "table_category": null,
+  "seated_time_utc": "2022-07-07T21:19:42Z",
+  "done_time_utc": "2022-07-07T23:03:04Z",
+  "created_date_utc": "2022-07-05T20:27:44Z",
+  "updated_at_utc": "2022-07-07T23:28:23Z",
+  "server": "Stephen",
+  "referrer": null,
+  "added_to_waitlist": null,
+  "added_to_waitlist_utc": null,
+  "arrived_time": "2022-07-07T16:19:42",
+  "arrived_time_utc": "2022-07-07T21:19:42Z",
+  "currency_code": "USD",
+  "currency_denominator": 100
+}
