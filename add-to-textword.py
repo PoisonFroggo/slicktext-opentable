@@ -3,7 +3,7 @@ import json
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-
+#!/usr/bin/env python3.13
 #Adds a defined user to the Textword
 
 #load environment variables from .env file
