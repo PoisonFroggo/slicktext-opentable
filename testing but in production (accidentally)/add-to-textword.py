@@ -53,7 +53,7 @@ def double_opt_in_contact(
     """
     Double opts a contact into a specific textword list.
     """
-    url = "https://api.slicktext.com/v1/contacts/"
+    url = contacts_url
     headers = {
         "Content-Type": "application/json"
     }
@@ -109,7 +109,7 @@ try:
         public_key=public_key,
         private_key=private_key,
         textword=textword_id,
-        number="+16056952106"
+        number="+16056951184"
     )
     print("Response: ", response)
 except requests.exceptions.RequestException as e:
