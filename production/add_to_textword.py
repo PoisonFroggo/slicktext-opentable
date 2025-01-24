@@ -5,7 +5,9 @@ import base64
 from pathlib import Path
 from dotenv import load_dotenv
 #!/usr/bin/env python3.13
-#Adds a defined user to the Textword
+#Adds the input guest data to the textword, making sure that the user has not already
+#been a part of the textword
+    
 
 #load environment variables from .env file
 load_dotenv
@@ -33,23 +35,3 @@ client_secret = os.getenv("OPENTABLE_CLIENT_SECRET")
 #public and private keys
 public_key = os.getenv("SLICKTEXT_PUBLIC_KEY")
 private_key = os.getenv("SLICKTEXT_PRIVATE_KEY")
-
-if not public_key or not private_key:
-    raise ValueError("Public and private keys must be set in the environment variables.")
-
-
-# Step 1: Concatenate client_id and client_secret with a colon
-credentials = f"{client_id}:{client_secret}"
-# Step 2: Base64 encode the result
-encoded_credentials = base64.b64encode(credentials.encode("utf-8")).decode("utf-8")
-
-headers = {
-    "Authorization": f"Basic {encoded_credentials}",
-    "Content-Length": "0"
-}
-
-query_params
-
-response = requests.get(reservations_url, headers=headers)
-
-print(response.json())
